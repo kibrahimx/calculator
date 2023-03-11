@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #111;
+    background-color: rgb(14, 216, 0);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -26,12 +26,15 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: green;
+    background-color: #111;
     height: 75vh;
     width: 25vw;
+    border-radius: 5%;
 }
 
 #display {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     margin: 5%;
     height: 25%;
@@ -44,8 +47,25 @@ main {
 
 #buttons {
     display: grid;
+    gap: 1em;
     grid-template-columns: repeat(4, 1fr);
     background-color: #111;
     height: 65%;
     width: 90%;
+}
+
+#buttons > button {
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+#previous-input, #current-input {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 2rem;
+    height: 50%;
+    width: 100%;
+    background-color: white;
 }
